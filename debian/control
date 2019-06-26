@@ -1,0 +1,24 @@
+Source: php-ease-twbootstrap4-widgets
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.8.4
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Uploaders: Vitex <vitex@hippy.cz>
+Priority: optional
+Homepage: https://github.com/Vitexus/php-ease-twbootstrap4-widgets
+
+Package: php-ease-twbootstrap4-widgets
+Depends: ${misc:Depends},php-ease-core
+Architecture: all
+Section: web
+Priority: optional
+Description: Simple PHP framework TWB4 Widgets
+ Twitter Bootstrap4 Widgets for EasePHP Framework
+
+#Package: php-ease-twbootstrap4-widgets-doc
+#Depends: ${misc:Depends},
+#Suggests: www-browser
+#Architecture: all
+#Section: doc
+#Priority: optional
+#Description: Ease Framework documentation
+# ApiGen html documentation for ease-framework php library

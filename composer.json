@@ -1,0 +1,32 @@
+{
+    "name": "vitexsoftware/ease-twbootstrap-widgets",
+    "description": "EasePHP framework addons and code snipplets",
+    "authors": [
+        {
+            "name": "Vítězslav Dvořák",
+            "email": "info@vitexsoftware.cz",
+            "homepage": "http://v.s.cz/"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ease\\TWB4\\": "src/Ease/TWB4"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\Ease\\": "vendor/vitexsoftware/ease-framework/tests/src/Ease",
+            "Test\\Ease\\TWB4\\": "vendor/vitexsoftware/ease-framework/tests/src/Ease/TWB4"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "vitexsoftware/ease-html": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8"
+    },
+    "type": "library",
+    "homepage": "http://v.s.cz/ease.php",
+    "license": "GPL-2.0+"
+}
