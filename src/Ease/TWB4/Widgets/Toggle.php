@@ -4,12 +4,12 @@
  *
  * @link       https://gitbrent.github.io/bootstrap4-toggle
  * @author     Vítězslav Dvořák <vitex@arachne.cz>
- * @copyright  2016 Vitex Software
+ * @copyright  2019 Vitex Software
  */
 
-namespace Ease\ui;
+namespace Ease\TWB4\Widgets;
 
-class TWBSwitch extends \Ease\Html\CheckboxTag
+class Toggle extends \Ease\Html\CheckboxTag
 {
     /**
      * Properties holder
@@ -40,7 +40,6 @@ class TWBSwitch extends \Ease\Html\CheckboxTag
         }
 
         parent::__construct($name, $checked, $value, $properties);
-
     }
 
     /**

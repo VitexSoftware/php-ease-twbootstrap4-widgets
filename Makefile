@@ -1,15 +1,15 @@
 clean:
-	rm -rf debian/ease-framework-bricks
-	rm -rf debian/ease-framework-bricks-doc
+	rm -rf debian/php-ease-twbootstrap4-widgets
+	rm -rf debian/php-ease-twbootstrap4-widgets-doc
 	rm -rf debian/*.log
 	rm -rf docs/*
+	rm -rf vendor/* composer.lock
 
 doc:
 	debian/apigendoc.sh
 
 test:
 	composer update
-	echo sudo service postgresql start ; sudo service postgresql start
 	phpunit --bootstrap tests/Bootstrap.php --configuration tests/configuration.xml tests
 	codecept run
 
