@@ -8,10 +8,10 @@ Object oriented PHP Framework for easy&fast writing small/middle sized apps.
 [![Latest Version](https://img.shields.io/github/release/VitexSoftware/php-ease-twbootstrap4-widgets.svg?style=flat-square)](https://github.com/VitexSoftware/php-ease-twbootstrap4-widgets/releases)
 [![Software License](https://img.shields.io/badge/license-GPL-brightgreen.svg?style=flat-square)](https://github.com/VitexSoftware/php-ease-twbootstrap4-widgets/blob/master/LICENSE)
 [![Build Status](https://img.shields.io/travis/VitexSoftware/php-ease-twbootstrap4-widgets/master.svg?style=flat-square)](https://travis-ci.org/VitexSoftware/php-ease-twbootstrap4-widgets)
-[![Total Downloads](https://img.shields.io/packagist/dt/vitexsoftware/ease-bricks.svg?style=flat-square)](https://packagist.org/packages/vitexsoftware/php-ease-twbootstrap4-widgets)
-[![Docker pulls](https://img.shields.io/docker/pulls/vitexsoftware/ease-bricks.svg)](https://hub.docker.com/r/vitexsoftware/php-ease-twbootstrap4-widgets/)
-[![Downloads](https://img.shields.io/packagist/dt/vitexsoftware/ease-bricks.svg?style=flat-square)](https://packagist.org/packages/vitexsoftware/php-ease-twbootstrap4-widgets)
-[![Latest stable](https://img.shields.io/packagist/v/vitexsoftware/ease-bricks.svg?style=flat-square)](https://packagist.org/packages/vitexsoftware/php-ease-twbootstrap4-widgets)
+[![Total Downloads](https://img.shields.io/packagist/dt/vitexsoftware/php-ease-twbootstrap4-widgets.svg?style=flat-square)](https://packagist.org/packages/vitexsoftware/php-ease-twbootstrap4-widgets)
+[![Docker pulls](https://img.shields.io/docker/pulls/vitexsoftware/php-ease-twbootstrap4-widgets.svg)](https://hub.docker.com/r/vitexsoftware/php-ease-twbootstrap4-widgets/)
+[![Downloads](https://img.shields.io/packagist/dt/vitexsoftware/php-ease-twbootstrap4-widgets.svg?style=flat-square)](https://packagist.org/packages/vitexsoftware/php-ease-twbootstrap4-widgets)
+[![Latest stable](https://img.shields.io/packagist/v/vitexsoftware/php-ease-twbootstrap4-widgets.svg?style=flat-square)](https://packagist.org/packages/vitexsoftware/php-ease-twbootstrap4-widgets)
 
 ---
 
