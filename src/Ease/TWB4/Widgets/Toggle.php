@@ -18,6 +18,18 @@ class Toggle extends \Ease\Html\CheckboxTag
     public $properties = [];
 
     /**
+     * Stylesheet location
+     * @var string 
+     */
+    public $css = 'https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/css/bootstrap4-toggle.min.css';
+    
+    /**
+     * Javascript location
+     * @var string
+     */
+    public $js = 'https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/js/bootstrap4-toggle.min.js';
+    
+    /**
      * Twitter Bootstrap switch
      *
      * @param string $name       tag name
@@ -35,7 +47,7 @@ class Toggle extends \Ease\Html\CheckboxTag
         if (!isset($properties['data-on'])) {
             $properties['data-on'] = _('Yes');
         }
-        if (!isset($properties['data-on'])) {
+        if (!isset($properties['data-off'])) {
             $properties['data-off'] = _('No');
         }
 
@@ -58,7 +70,7 @@ class Toggle extends \Ease\Html\CheckboxTag
     public function finalize()
     {
         \Ease\TWB4\Part::twBootstrapize();
-        $this->includeCss('https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/css/bootstrap4-toggle.min.css');
-        $this->includeJavascript('https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/js/bootstrap4-toggle.min.js');
+        $this->includeCss($this->css);
+        $this->includeJavascript($this->js);
     }
 }
