@@ -5,6 +5,14 @@ EasePHP Twitter Bootstrap4 Widgets
 
 Object oriented PHP Framework for easy&fast writing small/middle sized apps.
 
+
+[![Latest Stable Version](https://poser.pugx.org/vitexsoftware/ease-twbootstrap4-widgets/v/stable)](https://packagist.org/packages/vitexsoftware/ease-twbootstrap4-widgets)
+[![Total Downloads](https://poser.pugx.org/vitexsoftware/ease-twbootstrap4-widgets/downloads)](https://packagist.org/packages/vitexsoftware/ease-twbootstrap4-widgets)
+[![Latest Unstable Version](https://poser.pugx.org/vitexsoftware/ease-twbootstrap4-widgets/v/unstable)](https://packagist.org/packages/vitexsoftware/ease-twbootstrap4-widgets)
+[![License](https://poser.pugx.org/vitexsoftware/ease-twbootstrap4-widgets/license)](https://packagist.org/packages/vitexsoftware/ease-twbootstrap4-widgets)
+[![Monthly Downloads](https://poser.pugx.org/vitexsoftware/ease-twbootstrap4-widgets/d/monthly)](https://packagist.org/packages/vitexsoftware/ease-twbootstrap4-widgets)
+[![Daily Downloads](https://poser.pugx.org/vitexsoftware/ease-twbootstrap4-widgets/d/daily)](https://packagist.org/packages/vitexsoftware/ease-twbootstrap4-widgets)
+
 [![Latest Version](https://img.shields.io/github/release/VitexSoftware/php-ease-twbootstrap4-widgets.svg?style=flat-square)](https://github.com/VitexSoftware/php-ease-twbootstrap4-widgets/releases)
 [![Software License](https://img.shields.io/badge/license-GPL-brightgreen.svg?style=flat-square)](https://github.com/VitexSoftware/php-ease-twbootstrap4-widgets/blob/master/LICENSE)
 [![Build Status](https://img.shields.io/travis/VitexSoftware/php-ease-twbootstrap4-widgets/master.svg?style=flat-square)](https://travis-ci.org/VitexSoftware/php-ease-twbootstrap4-widgets)
