@@ -7,6 +7,7 @@
  * @copyright  2019 Vitex Software
  */
 
+
 namespace Ease\TWB4\Widgets;
 
 class Toggle extends \Ease\Html\CheckboxTag

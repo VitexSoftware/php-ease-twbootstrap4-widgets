@@ -43,19 +43,27 @@ $mpmenu = new \Ease\ui\MainPageMenu();
 $mpmenu->addMenuItem('logo.png', 'Caption', 'https://url/');
 ```
 
-TwitterBootstrap Switch
+TwitterBootstrap Toggle
 -----------------------
 
 Ease support for http://bootstrapswitch.com/ 
 
-![TWBSwitch](https://raw.githubusercontent.com/VitexSoftware/php-ease-twbootstrap4-widgets/master/TWBSwitch.png "Main Page Menu screenshot")
+![Toggle](https://raw.githubusercontent.com/VitexSoftware/php-ease-twbootstrap4-widgets/master/Toggle.png "Main Page Menu screenshot")
 
 ```php
-new Ease\ui\TWBSwitch('swname', true, 1,['onText' => 'YES', 'offText' => 'NO']);
+new Ease\ui\Toggle('swname', true, 1,['onText' => 'YES', 'offText' => 'NO']);
 ```
 
-The **libjs-bootstrap-switch** package with requied js/css assets is already present in our repository https://www.vitexsoftware.cz/repo.php
+Password Input with eye
+-----------------------
 
+PasswordInputShowHide();
+
+
+Font Awesome Icon
+-----------------
+
+FaIcon();
 
 
 Installation
