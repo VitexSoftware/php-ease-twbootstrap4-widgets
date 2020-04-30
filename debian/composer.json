@@ -1,7 +1,7 @@
 {
     "name": "deb/ease-twbootstrap4-widgets",
     "description": "Twitter Bootstrap4 Widgets for PHP Framework (debianized)",
-    "version": "0.0",
+    "version": "0.9.3",
     "authors": [
         {
             "name": "Vítězslav Dvořák",
@@ -11,7 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Ease\\TWB4\\Widgets": "src/Ease/TWB4/Widgets"
+            "Ease\\TWB4\\Widgets\\": "./"
         }
 
     },
@@ -22,24 +22,15 @@
     "repositories": [
         {
             "type": "path",
-            "url": "/usr/share/php/Ease",
-            "options": {
-                "symlink": true
-            }
+            "url": "/usr/share/php/Ease"
         },
         {
             "type": "path",
-            "url": "/usr/share/php/EaseHtml",
-            "options": {
-                "symlink": true
-            }
+            "url": "/usr/share/php/EaseHtml"
         },
         {
             "type": "path",
-            "url": "/usr/share/php/EaseTWB4",
-            "options": {
-                "symlink": true
-            }
+            "url": "/usr/share/php/EaseTWB4"
         }
     ],
     "type": "library",

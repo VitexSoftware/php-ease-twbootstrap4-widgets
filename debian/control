@@ -1,13 +1,13 @@
 Source: php-ease-twbootstrap4-widgets
 Build-Depends: debhelper (>= 7.0.50~)
-Standards-Version: 3.8.4
+Standards-Version: 4.3.0
 Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
 Uploaders: Vitex <vitex@hippy.cz>
 Priority: optional
 Homepage: https://github.com/Vitexus/php-ease-twbootstrap4-widgets
 
 Package: php-ease-twbootstrap4-widgets
-Depends: ${misc:Depends},php-ease-core
+Depends: ${misc:Depends},php-ease-twbootstrap4
 Architecture: all
 Section: web
 Priority: optional
