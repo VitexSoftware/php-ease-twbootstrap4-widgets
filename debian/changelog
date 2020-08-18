@@ -1,4 +1,4 @@
-php-ease-twbootstrap4-widgets (0.10) UNRELEASED; urgency=medium
+php-ease-bootstrap4-widgets (1.0) UNRELEASED; urgency=medium
 
   [ Vítězslav Dvořák ]
   * Non-maintainer upload.
@@ -7,5 +7,6 @@ php-ease-twbootstrap4-widgets (0.10) UNRELEASED; urgency=medium
   * package fix
   * composer fix
   * Menu Fixed
+  * Toggle assets added
 
- -- CyberVitexus <vitex@exiv.jinonice.czf>  Thu, 30 Apr 2020 20:02:18 +0200
+ -- CyberVitexus <vitex@exiv.jinonice.czf>  Tue, 18 Aug 2020 23:58:50 +0200

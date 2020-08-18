@@ -20,3 +20,7 @@ composer.lock
 /debian/php-ease-bricks/
 /debian/files
 /debian/debhelper-build-stamp
+/tmp/
+debian/.debhelper/
+/debian/php-ease-bootstrap4-widgets.debhelper.log
+/debian/php-ease-bootstrap4-widgets.substvars

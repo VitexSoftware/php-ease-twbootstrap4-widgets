@@ -9,8 +9,14 @@ BUILD_DIR:=build
 override_dh_auto_test:
 	echo tests temporarly skipped for now in rules file
 
+override_dh_clean:
+	rm -rf tmp
+	dh_clean
+
 override_dh_install:
 	./debian/apigendoc.sh
+	jq '.address = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'`'"' debian/composer.json |sponge debian/composer.json
+	npm install --prefix tmp bootstrap4-toggle
 	dh_install
-	sed -e "/includeCss/c\        \$$this->includeCss(\'\/javascript\/bootstrap4\/css\/bootstrap4-toggle.min.css\');" -i debian/php-ease-twbootstrap4-widgets/usr/share/php/EaseTWB4Widgets/Toggle.php 
-	sed -e "/includeJavascript/c\        \$$this->includeJavascript(\'\/javascript\/bootstrap4\/js\/bootstrap4-toggle.min.js\');"   -i debian/php-ease-twbootstrap4-widgets/usr/share/php/EaseTWB4Widgets/Toggle.php 
+	sed -e "/includeCss/c\        \$$this->includeCss(\'\/javascript\/bootstrap4\/css\/bootstrap4-toggle.min.css\');" -i debian/php-ease-bootstrap4-widgets/usr/share/php/EaseTWB4Widgets/Toggle.php 
+	sed -e "/includeJavascript/c\        \$$this->includeJavascript(\'\/javascript\/bootstrap4\/js\/bootstrap4-toggle.min.js\');"   -i debian/php-ease-bootstrap4-widgets/usr/share/php/EaseTWB4Widgets/Toggle.php 

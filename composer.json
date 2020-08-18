@@ -1,5 +1,5 @@
 {
-    "name": "vitexsoftware/ease-twbootstrap4-widgets",
+    "name": "vitexsoftware/ease-bootstrap4-widgets",
     "description": "EasePHP framework addons and code snipplets",
     "authors": [
         {
@@ -19,9 +19,9 @@
             "Test\\Ease\\TWB4\\": "vendor/vitexsoftware/ease-framework/tests/src/Ease/TWB4"
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
-        "vitexsoftware/ease-twbootstrap4": "dev-master"
+        "vitexsoftware/ease-twbootstrap4": "^0.7.5"
     },
     "require-dev": {
         "phpunit/phpunit": "^8"
