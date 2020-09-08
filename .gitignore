@@ -24,3 +24,4 @@ composer.lock
 debian/.debhelper/
 /debian/php-ease-bootstrap4-widgets.debhelper.log
 /debian/php-ease-bootstrap4-widgets.substvars
+/debian/php-ease-bootstrap4-widgets/
