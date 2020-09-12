@@ -49,8 +49,8 @@ class MainPageMenu extends \Ease\TWB4\Row {
         $cardHeader = new \Ease\Html\DivTag($title, ['class' => 'card-header']);
         $cardBody = new \Ease\Html\DivTag(new \Ease\Html\H5Tag($title), ['class' => 'card-body']);
         $cardBody->addItem(new \Ease\Html\PTag($description, ['class' => 'card-text']));
-        $cardBody->addItem(new \Ease\TWB4\LinkButton($url, empty($buttonText) ? _('Visit') : $buttonText, 'primary'));
-        $menuCard = new \Ease\TWB4\Card([$cardHeader, $icon, $cardBody], $properties);
+        $cardBody->addItem(new \Ease\TWB4\LinkButton($url, empty($buttonText) ? _('Visit') : $buttonText, 'primary btn-block'));
+        $menuCard = new \Ease\TWB4\Card([$icon, $cardBody], $properties);
 
         return $this->addItem(new \Ease\TWB4\Col(3, $menuCard));
     }
