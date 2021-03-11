@@ -2,7 +2,7 @@ Package: php-vitexsoftware-ease-bootstrap4-widgets
 Version: 1.1
 Architecture: all
 Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
-Installed-Size: 45
+Installed-Size: 46
 Depends: php-vitexsoftware-ease-bootstrap4
 Conflicts: php-ease-bootstrap4-widgets
 Section: web

@@ -9,5 +9,6 @@ php-vitexsoftware-ease-bootstrap4-widgets (1.1) UNRELEASED; urgency=medium
   * Menu Fixed
   * Toggle assets added
   * Update composer.json
+  * Localization update
 
- -- CyberVitexus <vitex@exiv.jinonice.czf>  Thu, 27 Aug 2020 15:26:31 +0200
+ -- CyberVitexus <vitex@exiv.jinonice.czf>  Thu, 11 Mar 2021 16:09:42 +0100
