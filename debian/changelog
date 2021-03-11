@@ -1,4 +1,4 @@
-php-vitexsoftware-ease-bootstrap4-widgets (1.2) UNRELEASED; urgency=medium
+php-vitexsoftware-ease-bootstrap4-widgets (1.3) UNRELEASED; urgency=medium
 
   [ Vítězslav Dvořák ]
   * Non-maintainer upload.
@@ -11,4 +11,4 @@ php-vitexsoftware-ease-bootstrap4-widgets (1.2) UNRELEASED; urgency=medium
   * Update composer.json
   * Localization update
 
- -- CyberVitexus <vitex@exiv.jinonice.czf>  Thu, 11 Mar 2021 16:10:12 +0100
+ -- CyberVitexus <vitex@exiv.jinonice.czf>  Thu, 11 Mar 2021 16:14:52 +0100
