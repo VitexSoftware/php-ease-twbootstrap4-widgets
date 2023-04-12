@@ -56,6 +56,15 @@ Font Awesome Icon
 
 FaIcon();
 
+Browsing History
+----------------
+
+```
+new BrowsingHistory();
+``` 
+![Browsing History](BrowsingHistory.png?raw=true "Browsing History")
+
+
 
 Installation
 ------------
