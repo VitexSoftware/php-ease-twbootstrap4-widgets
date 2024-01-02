@@ -17,18 +17,18 @@ use Ease\Html\PairTag;
  *
  * @author vitex
  */
-class FaIcon extends PairTag {
-
+class FaIcon extends PairTag
+{
     /**
      * Font Awesome Icon tag
-     * 
+     *
      * @param string $icon Font Awesome Icon class name (maybe without fa- prefix)
-     * 
+     *
      * @param array $tagProperties eg. ['aria-hidden'=>false]
      */
-    public function __construct($icon, $tagProperties = null) {
+    public function __construct($icon, $tagProperties = null)
+    {
         $tagProperties['class'] = 'fa fa-' . preg_replace('/^fa\-/i', '', $icon);
         parent::__construct('i', $tagProperties);
     }
-
 }

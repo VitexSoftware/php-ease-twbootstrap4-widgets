@@ -1,4 +1,5 @@
 <?php
+
 /**
  * EasePHP Bricks - Browsing History.
  *
@@ -10,16 +11,15 @@ namespace Ease\TWB4\Widgets;
 
 /**
  * Show history of visited pages in app
- * 
+ *
  * @param mixed $content
  * @param array $properties
  */
 class BrowsingHistory extends \Ease\Html\DivTag
 {
-
     /**
      * Show history of visited pages in app
-     * 
+     *
      * @param mixed $content
      * @param array $properties
      */
@@ -46,12 +46,18 @@ class BrowsingHistory extends \Ease\Html\DivTag
                 unset($_SESSION['history'][$hid]);
             }
         }
-        array_unshift($_SESSION['history'],
-            ['url' => $currentUrl, 'title' => $currentTitle]);
+        array_unshift(
+            $_SESSION['history'],
+            ['url' => $currentUrl, 'title' => $currentTitle]
+        );
         foreach ($_SESSION['history'] as $bookmark) {
-            $this->addItem(new \Ease\Html\SpanTag(new \Ease\Html\ATag($bookmark['url'],
-                ['🔖 '.$bookmark['title']]),
-                ['class' => 'hitem']));
+            $this->addItem(new \Ease\Html\SpanTag(
+                new \Ease\Html\ATag(
+                    $bookmark['url'],
+                    ['🔖 ' . $bookmark['title']]
+                ),
+                ['class' => 'hitem']
+            ));
         }
     }
 

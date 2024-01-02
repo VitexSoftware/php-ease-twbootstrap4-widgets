@@ -13,8 +13,8 @@ namespace Ease\TWB4\Widgets;
  *
  * @author vitex
  */
-class LoginForm extends \Ease\TWB4\Form {
-
+class LoginForm extends \Ease\TWB4\Form
+{
     public $loginInput = null;
     public $passwordInput = null;
     public $loginInputName = 'login';
@@ -28,7 +28,8 @@ class LoginForm extends \Ease\TWB4\Form {
      * @param string $password
      * @param array $tagProperties
      */
-    public function __construct($username = null, $password = null, $tagProperties = array()) {
+    public function __construct($username = null, $password = null, $tagProperties = array())
+    {
         parent::__construct('Login', $this->formAction, $this->formMethod, $formContents, $tagProperties);
         $this->addInput(new \Ease\Html\InputTextTag($this->loginInputName, $username), _('Username'));
         $this->addItem(new PasswordInputShowHide($this->passwordInputName, _('Password'), $password));
@@ -37,9 +38,9 @@ class LoginForm extends \Ease\TWB4\Form {
     /**
      * Finally add submit button
      */
-    public function finalize() {
+    public function finalize()
+    {
         \Ease\TWB4\Part::twBootstrapize();
         $this->addItem(new \Ease\Html\SubmitButton(_('Submit')));
     }
-
 }

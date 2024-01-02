@@ -17,25 +17,26 @@ use Ease\Html\InputPasswordTag;
 use Ease\Html\LabelTag;
 use Ease\TWB4\Part;
 
-class PasswordInputShowHide extends DivTag {
-
+class PasswordInputShowHide extends DivTag
+{
     /**
      *
-     * @var unique widget identifier 
+     * @var unique widget identifier
      */
     public $key = null;
 
     /**
      * Password Input with Eye
-     * 
+     *
      * @param string $inputName
      * @param string $label
      * @param string $plaintext
      */
-    public function __construct($inputName, $label, $plaintext = null) {
+    public function __construct($inputName, $label, $plaintext = null)
+    {
         $this->key = Functions::randomString();
         parent::__construct(new LabelTag($this->key, $label), ['class' => 'form-group']);
-        $inputGroup = new DivTag(new InputPasswordTag($inputName, $plaintext,['class'=>'form-control']), ['class' => 'input-group', 'id' => $this->key]);
+        $inputGroup = new DivTag(new InputPasswordTag($inputName, $plaintext, ['class' => 'form-control']), ['class' => 'input-group', 'id' => $this->key]);
         $inputGroup->addItem(new DivTag(new ATag('', new FaIcon('eye-slash', ['aria-hidden' => 'true'])), ['class' => 'input-group-addon']));
         $this->addItem($inputGroup);
     }
@@ -43,7 +44,8 @@ class PasswordInputShowHide extends DivTag {
     /**
      * Include requied assets in page
      */
-    public function finalize() {
+    public function finalize()
+    {
         Part::twBootstrapize();
         $this->addJavascript('
 $("#' . $this->key . ' a").on("click", function (event) {
@@ -60,5 +62,4 @@ $("#' . $this->key . ' a").on("click", function (event) {
   });            
             ');
     }
-
 }

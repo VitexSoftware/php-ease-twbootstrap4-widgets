@@ -1,12 +1,12 @@
 <?php
+
 /**
  * EasePHP Twitter Bootstrap  - Toggle
  *
  * @link       https://gitbrent.github.io/bootstrap4-toggle
  * @author     Vítězslav Dvořák <vitex@arachne.cz>
- * @copyright  2019 Vitex Software
+ * @copyright  2019-2024 Vitex Software
  */
-
 
 namespace Ease\TWB4\Widgets;
 
@@ -20,16 +20,16 @@ class Toggle extends \Ease\Html\CheckboxTag
 
     /**
      * Stylesheet location
-     * @var string 
+     * @var string
      */
-    public $css = 'https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/css/bootstrap4-toggle.min.css';
-    
+    public $css = 'https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css';
+
     /**
      * Javascript location
      * @var string
      */
-    public $js = 'https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/js/bootstrap4-toggle.min.js';
-    
+    public $js = 'https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js';
+
     /**
      * Twitter Bootstrap switch
      *
@@ -38,9 +38,12 @@ class Toggle extends \Ease\Html\CheckboxTag
      * @param string $value      returned value
      * @param array  $properties tag parameters
      */
-    public function __construct($name, $checked = false, $value = null,
-                                $properties = null)
-    {
+    public function __construct(
+        $name,
+        $checked = false,
+        $value = null,
+        $properties = null
+    ) {
         if (!isset($properties['data-toggle'])) {
             $properties['data-toggle'] = 'toggle';
         }
@@ -57,7 +60,7 @@ class Toggle extends \Ease\Html\CheckboxTag
 
     /**
      * Properties setter
-     * 
+     *
      * @param array $properties values to change
      */
     public function setProperties($properties)

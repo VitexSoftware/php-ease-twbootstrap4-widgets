@@ -13,20 +13,21 @@ namespace Ease\TWB4\Widgets;
  *
  * @author vitex
  */
-class LangLinks extends \Ease\Html\UlTag {
-
-    
-    public function __construct($properties = []) {
+class LangLinks extends \Ease\Html\UlTag
+{
+    public function __construct($properties = [])
+    {
         parent::__construct(null, $properties);
         foreach (\Ease\Locale::singleton()->availble() as $code => $name) {
             $name = substr($name, 0, strpos($name, ' ('));
             if (\Ease\Locale::$localeUsed == $code) {
-                $this->addItemSmart(new \Ease\Html\StrongTag(new \Ease\Html\ATag('?locale=' . $code,
-                                        $name)));
+                $this->addItemSmart(new \Ease\Html\StrongTag(new \Ease\Html\ATag(
+                    '?locale=' . $code,
+                    $name
+                )));
             } else {
                 $this->addItemSmart(new \Ease\Html\ATag('?locale=' . $code, $name));
             }
         }
     }
-
 }

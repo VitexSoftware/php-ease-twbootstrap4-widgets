@@ -3,15 +3,15 @@
 /**
  * EasePHPbricks - Mainpage Large Icons Menu
  *
- * 
+ *
  * @author     Vítězslav Dvořák <vitex@arachne.cz>
  * @copyright  2016-2019 Vitex Software
  */
 
 namespace Ease\TWB4\Widgets;
 
-class MainPageMenu extends \Ease\TWB4\Row {
-
+class MainPageMenu extends \Ease\TWB4\Row
+{
     /**
      * Sem se přidávají položky.
      *
@@ -22,10 +22,12 @@ class MainPageMenu extends \Ease\TWB4\Row {
     /**
      * MainPage Menu
      */
-    public function __construct() {
+    public function __construct()
+    {
         parent::__construct(
-                null, null,
-                [
+            null,
+            null,
+            [
                     'class' => 'container',
                     'style' => 'margin: auto;',
                 ]
@@ -34,16 +36,17 @@ class MainPageMenu extends \Ease\TWB4\Row {
 
     /**
      * Add Item to mainpage Menu
-     * 
+     *
      * @param string $title caption
      * @param string $url   image link href url
      * @param string $image url
      * @param string $decription additional text
      * @param array  $properties for Card
-     * 
+     *
      * @return \Ease\Html\ATag
      */
-    public function addMenuItem($title, $url, $image, $description, $buttonText = null, $properties = []) {
+    public function addMenuItem($title, $url, $image, $description, $buttonText = null, $properties = [])
+    {
 
         $icon = new \Ease\Html\ImgTag($image, $title, ['alt' => $title, 'class' => 'card-img-top']);
         $cardHeader = new \Ease\Html\DivTag($title, ['class' => 'card-header']);
@@ -54,5 +57,4 @@ class MainPageMenu extends \Ease\TWB4\Row {
 
         return $this->addItem(new \Ease\TWB4\Col(3, $menuCard));
     }
-
 }

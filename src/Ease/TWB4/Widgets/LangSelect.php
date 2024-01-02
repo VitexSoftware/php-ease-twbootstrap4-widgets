@@ -15,10 +15,10 @@ namespace Ease\TWB4\Widgets;
  *
  * @author vitex
  */
-class LangSelect extends \Ease\Html\SelectTag {
-
-    public function __construct(string $name = 'locale', array $properties = []) {
+class LangSelect extends \Ease\Html\SelectTag
+{
+    public function __construct(string $name = 'locale', array $properties = [])
+    {
         parent::__construct($name, \Ease\Locale::singleton()->availble(), \Ease\Locale::$localeUsed, $properties);
     }
-
 }
