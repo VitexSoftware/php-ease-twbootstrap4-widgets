@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ease Framework\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-11 16:07+0100\n"
-"PO-Revision-Date: 2021-03-11 16:07+0100\n"
+"POT-Creation-Date: 2024-07-27 18:56+0200\n"
+"PO-Revision-Date: 2024-07-27 18:56+0200\n"
 "Last-Translator: Vitex <info@vitexsoftware.cz>\n"
 "Language-Team: Vitex Software <info@vitexsoftware.cz>\n"
 "Language: en_US\n"
@@ -13,30 +13,26 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: ../../..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 3.2.2\n"
 "X-Poedit-SearchPath-0: src\n"
 "X-Poedit-SearchPath-1: Examples\n"
 
-#: src/Ease/TWB4/Widgets/LoginForm.php:33
-msgid "Username"
-msgstr "Username"
-
-#: src/Ease/TWB4/Widgets/LoginForm.php:34
-msgid "Password"
-msgstr "Password"
-
-#: src/Ease/TWB4/Widgets/LoginForm.php:42
-msgid "Submit"
-msgstr "Submit"
-
-#: src/Ease/TWB4/Widgets/MainPageMenu.php:52
-msgid "Visit"
-msgstr "Visit"
-
-#: src/Ease/TWB4/Widgets/Toggle.php:49
+#: src/Ease/TWB5/Widgets/Toggle.php:52
 msgid "Yes"
 msgstr "Yes"
 
-#: src/Ease/TWB4/Widgets/Toggle.php:52
+#: src/Ease/TWB5/Widgets/Toggle.php:55
 msgid "No"
 msgstr "No"
+
+#~ msgid "Username"
+#~ msgstr "Username"
+
+#~ msgid "Password"
+#~ msgstr "Password"
+
+#~ msgid "Submit"
+#~ msgstr "Submit"
+
+#~ msgid "Visit"
+#~ msgstr "Visit"

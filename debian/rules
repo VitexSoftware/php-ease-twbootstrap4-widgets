@@ -15,7 +15,7 @@ override_dh_clean:
 
 override_dh_install:
 	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'| sed 's/~.*//'`'"'  debian/composer.json |sponge debian/composer.json
-	npm install --prefix tmp bootstrap4-toggle
+	npm install --prefix tmp bootstrap5-toggle
 	dh_install
-	sed -e "/includeCss/c\        \$$this->includeCss(\'\/javascript\/bootstrap4\/css\/bootstrap4-toggle.min.css\');" -i debian/php-vitexsoftware-ease-bootstrap4-widgets/usr/share/php/EaseTWB4Widgets/Toggle.php 
-	sed -e "/includeJavascript/c\        \$$this->includeJavascript(\'\/javascript\/bootstrap4\/js\/bootstrap4-toggle.min.js\');"   -i debian/php-vitexsoftware-ease-bootstrap4-widgets/usr/share/php/EaseTWB4Widgets/Toggle.php 
+	sed -e "/includeCss/c\        \$$this->includeCss(\'\/javascript\/bootstrap5\/css\/bootstrap5-toggle.min.css\');" -i debian/php-vitexsoftware-ease-bootstrap5-widgets/usr/share/php/EaseTWB5Widgets/Toggle.php 
+	sed -e "/includeJavascript/c\        \$$this->includeJavascript(\'\/javascript\/bootstrap5\/js\/bootstrap5-toggle.jquery.min.js\');"   -i debian/php-vitexsoftware-ease-bootstrap5-widgets/usr/share/php/EaseTWB5Widgets/Toggle.php 

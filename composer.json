@@ -1,5 +1,5 @@
 {
-    "name": "vitexsoftware/ease-bootstrap4-widgets",
+    "name": "vitexsoftware/ease-bootstrap5-widgets",
     "description": "EasePHP framework addons and code snipplets",
     "authors": [
         {
@@ -10,18 +10,18 @@
     ],
     "autoload": {
         "psr-4": {
-            "Ease\\TWB4\\Widgets\\": "src/Ease/TWB4/Widgets"
+            "Ease\\TWB5\\Widgets\\": "src/Ease/TWB5/Widgets"
         }
     },
     "autoload-dev": {
         "psr-4": {
             "Test\\Ease\\": "vendor/vitexsoftware/ease-framework/tests/src/Ease",
-            "Test\\Ease\\TWB4\\": "vendor/vitexsoftware/ease-framework/tests/src/Ease/TWB4"
+            "Test\\Ease\\TWB5\\": "vendor/vitexsoftware/ease-framework/tests/src/Ease/TWB5"
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
-        "vitexsoftware/ease-twbootstrap4": ">=1.1"
+        "vitexsoftware/ease-twbootstrap5": "*"
     },
     "require-dev": {
         "phpunit/phpunit": ">=8"
