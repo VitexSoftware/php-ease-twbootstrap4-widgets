@@ -42,7 +42,7 @@ Composer:
 ---------
 
 ```shell
-composer require vitexsoftware/ease-twbootstrap5-widgets
+composer require vitexsoftware/ease-bootstrap5-widgets
 ```
 
 
