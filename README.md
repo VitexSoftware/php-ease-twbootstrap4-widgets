@@ -1,19 +1,19 @@
-![EasePHP TWB4 Widgets Logo](project-logo.png?raw=true "Project Logo")
+![EasePHP TWB5 Widgets Logo](project-logo.png?raw=true "Project Logo")
 
-EasePHP Twitter Bootstrap4 Widgets
+EasePHP Twitter bootstrap5 Widgets
 ==================================
 
 Object oriented PHP Framework for easy&fast writing small/middle sized apps.
 
-[![Latest Stable Version](https://poser.pugx.org/vitexsoftware/ease-twbootstrap4-widgets/v)](//packagist.org/packages/vitexsoftware/ease-twbootstrap4-widgets) 
-[![Total Downloads](https://poser.pugx.org/vitexsoftware/ease-twbootstrap4-widgets/downloads)](//packagist.org/packages/vitexsoftware/ease-twbootstrap4-widgets) 
-[![Latest Unstable Version](https://poser.pugx.org/vitexsoftware/ease-twbootstrap4-widgets/v/unstable)](//packagist.org/packages/vitexsoftware/ease-twbootstrap4-widgets) 
-[![License](https://poser.pugx.org/vitexsoftware/ease-twbootstrap4-widgets/license)](//packagist.org/packages/vitexsoftware/ease-twbootstrap4-widgets)
+[![Latest Stable Version](https://poser.pugx.org/vitexsoftware/ease-twbootstrap5-widgets/v)](//packagist.org/packages/vitexsoftware/ease-twbootstrap5-widgets) 
+[![Total Downloads](https://poser.pugx.org/vitexsoftware/ease-twbootstrap5-widgets/downloads)](//packagist.org/packages/vitexsoftware/ease-twbootstrap5-widgets) 
+[![Latest Unstable Version](https://poser.pugx.org/vitexsoftware/ease-twbootstrap5-widgets/v/unstable)](//packagist.org/packages/vitexsoftware/ease-twbootstrap5-widgets) 
+[![License](https://poser.pugx.org/vitexsoftware/ease-twbootstrap5-widgets/license)](//packagist.org/packages/vitexsoftware/ease-twbootstrap5-widgets)
 
-[![Monthly Downloads](https://poser.pugx.org/vitexsoftware/ease-twbootstrap4-widgets/d/monthly)](//packagist.org/packages/vitexsoftware/ease-twbootstrap4-widgets)
-[![Dependents](https://poser.pugx.org/vitexsoftware/ease-twbootstrap4-widgets/dependents)](//packagist.org/packages/vitexsoftware/ease-twbootstrap4-widgets)
-[![Daily Downloads](https://poser.pugx.org/vitexsoftware/ease-twbootstrap4-widgets/d/daily)](//packagist.org/packages/vitexsoftware/ease-twbootstrap4-widgets)
-[![Total Downloads](https://poser.pugx.org/vitexsoftware/ease-twbootstrap4-widgets/downloads)](//packagist.org/packages/vitexsoftware/ease-twbootstrap4-widgets)
+[![Monthly Downloads](https://poser.pugx.org/vitexsoftware/ease-twbootstrap5-widgets/d/monthly)](//packagist.org/packages/vitexsoftware/ease-twbootstrap5-widgets)
+[![Dependents](https://poser.pugx.org/vitexsoftware/ease-twbootstrap5-widgets/dependents)](//packagist.org/packages/vitexsoftware/ease-twbootstrap5-widgets)
+[![Daily Downloads](https://poser.pugx.org/vitexsoftware/ease-twbootstrap5-widgets/d/daily)](//packagist.org/packages/vitexsoftware/ease-twbootstrap5-widgets)
+[![Total Downloads](https://poser.pugx.org/vitexsoftware/ease-twbootstrap5-widgets/downloads)](//packagist.org/packages/vitexsoftware/ease-twbootstrap5-widgets)
 
 ---
 
@@ -22,49 +22,17 @@ Bricks Included
 
 
 
-MainPageMenu
-------------
 
-Well framed large icons
-
-![MainPageMenu](https://raw.githubusercontent.com/VitexSoftware/php-ease-bootstrap4-widgets/master/MainPageMenu.png "Main Page Menu screenshot")
-
-```php
-$mpmenu = new \Ease\ui\MainPageMenu();
-$mpmenu->addMenuItem('logo.png', 'Caption', 'https://url/');
-```
-
-TwitterBootstrap Toggle
+Bootstrap5 Toggle
 -----------------------
 
-Ease support for http://bootstrapswitch.com/ 
+Ease support for https://github.com/palcarazm/bootstrap5-toggle
 
-![Toggle](https://raw.githubusercontent.com/VitexSoftware/php-ease-bootstrap4-widgets/master/Toggle.png "Main Page Menu screenshot")
+![Toggle](Toggle.png?raw=true)
 
 ```php
 new Ease\ui\Toggle('swname', true, 1,['onText' => 'YES', 'offText' => 'NO']);
 ```
-
-Password Input with eye
------------------------
-
-PasswordInputShowHide();
-
-
-Font Awesome Icon
------------------
-
-FaIcon();
-
-Browsing History
-----------------
-
-```
-new BrowsingHistory();
-``` 
-![Browsing History](BrowsingHistory.png?raw=true "Browsing History")
-
-
 
 Installation
 ------------
@@ -74,7 +42,7 @@ Composer:
 ---------
 
 ```shell
-composer require vitexsoftware/ease-twbootstrap4-widgets
+composer require vitexsoftware/ease-bootstrap5-widgets
 ```
 
 
@@ -84,11 +52,8 @@ Older versions and its requirements https://packagist.org/packages/vitexsoftware
 For Debian, Ubuntu & friends please use repo:
 
 ```shell
-sudo apt install lsb-release wget
-echo "deb http://repo.vitexsoftware.cz $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/vitexsoftware.list
-sudo wget -O /etc/apt/trusted.gpg.d/vitexsoftware.gpg http://repo.vitexsoftware.cz/keyring.gpg
-sudo apt update
-sudo apt install php-vitexsoftware-ease-bootstrap4-widgets
+
+sudo apt install php-vitexsoftware-ease-bootstrap5-widgets
 ```
 
 In this case please add this to your app composer.json:
@@ -106,14 +71,14 @@ In this case please add this to your app composer.json:
         },
         {
             "type": "path",
-            "url": "/usr/share/php/EaseTWB4",
+            "url": "/usr/share/php/EaseTWB5",
             "options": {
                 "symlink": true
             }
         },
         {
             "type": "path",
-            "url": "/usr/share/php/EaseTWB4Widgets",
+            "url": "/usr/share/php/EaseTWB5Widgets",
             "options": {
                 "symlink": true
             }
@@ -125,6 +90,6 @@ Links
 
 Homepage: https://www.vitexsoftware.cz/ease.php
 
-GitHub: https://github.com/VitexSoftware/php-ease-bootstrap4-widgets
+GitHub: https://github.com/VitexSoftware/php-ease-bootstrap5-widgets
 
-PhpDocumentor: https://www.vitexsoftware.cz/php-ease-bootstrap4-widgets/
+PhpDocumentor: https://www.vitexsoftware.cz/php-ease-bootstrap5-widgets/

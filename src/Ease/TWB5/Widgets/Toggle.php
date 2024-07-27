@@ -3,12 +3,12 @@
 /**
  * EasePHP Twitter Bootstrap  - Toggle
  *
- * @link       https://gitbrent.github.io/bootstrap4-toggle
+ * @link       https://github.com/palcarazm/bootstrap5-toggle
  * @author     Vítězslav Dvořák <vitex@arachne.cz>
  * @copyright  2019-2024 Vitex Software
  */
 
-namespace Ease\TWB4\Widgets;
+namespace Ease\TWB5\Widgets;
 
 class Toggle extends \Ease\Html\CheckboxTag
 {
@@ -19,16 +19,16 @@ class Toggle extends \Ease\Html\CheckboxTag
     public $properties = [];
 
     /**
-     * Stylesheet location
+     * StyleSheet location
      * @var string
      */
-    public $css = 'https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css';
+    public $css = 'https://cdn.jsdelivr.net/npm/bootstrap5-toggle@5.1.1/css/bootstrap5-toggle.min.css';
 
     /**
-     * Javascript location
+     * JavaScript location
      * @var string
      */
-    public $js = 'https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js';
+    public $js = 'https://cdn.jsdelivr.net/npm/bootstrap5-toggle@5.1.1/js/bootstrap5-toggle.jquery.min.js';
 
     /**
      * Twitter Bootstrap switch
@@ -69,11 +69,12 @@ class Toggle extends \Ease\Html\CheckboxTag
     }
 
     /**
-     * Include requied assets in page
+     * Include required assets in page
      */
     public function finalize()
     {
-        \Ease\TWB4\Part::twBootstrapize();
+        \Ease\Part::jQueryze();
+        \Ease\TWB5\Part::twBootstrapize();
         $this->includeCss($this->css);
         $this->includeJavascript($this->js);
     }

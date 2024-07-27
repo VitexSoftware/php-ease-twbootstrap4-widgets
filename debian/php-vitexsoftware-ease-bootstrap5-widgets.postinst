@@ -2,7 +2,7 @@
 
 #DEBHELPER#
 
-# postinst script for ease-bootstrap4-widgets
+# postinst script for ease-bootstrap5-widgets
 #
 # see: dh_installdeb(1)
 
@@ -24,7 +24,7 @@ set -e
 case "$1" in
     configure)
 
-        composer-global-update deb/ease-bootstrap4-widgets
+        composer-global-update deb/ease-bootstrap5-widgets
 
     ;;
 

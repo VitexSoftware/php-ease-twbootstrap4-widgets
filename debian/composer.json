@@ -1,6 +1,6 @@
 {
-  "name": "deb/ease-bootstrap4-widgets",
-  "description": "Twitter Bootstrap4 Widgets for PHP Framework (debianized)",
+  "name": "deb/ease-bootstrap5-widgets",
+  "description": "Twitter bootstrap5 Widgets for PHP Framework (debianized)",
   "version": "1.3",
   "authors": [
     {
@@ -11,12 +11,12 @@
   ],
   "autoload": {
     "psr-4": {
-      "Ease\\TWB4\\Widgets\\": "./"
+      "Ease\\TWB5\\Widgets\\": "./"
     }
   },
   "minimum-stability": "dev",
   "require": {
-    "deb/ease-bootstrap4": "*"
+    "deb/ease-bootstrap5": "*"
   },
   "repositories": [
     {
@@ -29,7 +29,7 @@
     },
     {
       "type": "path",
-      "url": "/usr/share/php/EaseTWB4"
+      "url": "/usr/share/php/EaseTWB5"
     }
   ],
   "type": "library",
