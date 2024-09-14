@@ -22,10 +22,10 @@ composer.lock
 /debian/debhelper-build-stamp
 /tmp/
 debian/.debhelper/
-/debian/php-ease-bootstrap5-widgets.debhelper.log
-/debian/php-ease-bootstrap5-widgets.substvars
-/debian/php-ease-bootstrap5-widgets/
-debian/php-vitexsoftware-ease-bootstrap5-widgets
+/debian/php-ease-bootstrap4-widgets.debhelper.log
+/debian/php-ease-bootstrap4-widgets.substvars
+/debian/php-ease-bootstrap4-widgets/
+debian/php-vitexsoftware-ease-bootstrap4-widgets
 
-/debian/php-vitexsoftware-ease-bootstrap5-widgets.substvars
-/debian/php-vitexsoftware-ease-bootstrap5-widgets.debhelper.log
+/debian/php-vitexsoftware-ease-bootstrap4-widgets.substvars
+/debian/php-vitexsoftware-ease-bootstrap4-widgets.debhelper.log

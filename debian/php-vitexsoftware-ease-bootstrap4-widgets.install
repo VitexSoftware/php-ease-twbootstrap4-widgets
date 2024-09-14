@@ -1,0 +1,4 @@
+src/Ease/TWB4/Widgets/*.php     /usr/share/php/EaseTWB4Widgets
+debian/composer.json            /usr/share/php/EaseTWB4Widgets
+tmp/node_modules/bootstrap4-toggle/css/* /usr/share/javascript/bootstrap4/css/
+tmp/node_modules/bootstrap4-toggle/js/*  /usr/share/javascript/bootstrap4/js/

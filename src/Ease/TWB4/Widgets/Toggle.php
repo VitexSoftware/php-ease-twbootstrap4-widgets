@@ -3,7 +3,7 @@
 /**
  * EasePHP Twitter Bootstrap  - Toggle
  *
- * @link       https://github.com/palcarazm/bootstrap5-toggle
+ * @link       https://github.com/palcarazm/bootstrap4-toggle
  * @author     Vítězslav Dvořák <vitex@arachne.cz>
  * @copyright  2019-2024 Vitex Software
  */
@@ -22,13 +22,13 @@ class Toggle extends \Ease\Html\CheckboxTag
      * StyleSheet location
      * @var string
      */
-    public $css = 'https://cdn.jsdelivr.net/npm/bootstrap5-toggle@5.1.1/css/bootstrap5-toggle.min.css';
+    public $css = 'https://cdn.jsdelivr.net/npm/bootstrap4-toggle@5.1.1/css/bootstrap4-toggle.min.css';
 
     /**
      * JavaScript location
      * @var string
      */
-    public $js = 'https://cdn.jsdelivr.net/npm/bootstrap5-toggle@5.1.1/js/bootstrap5-toggle.jquery.min.js';
+    public $js = 'https://cdn.jsdelivr.net/npm/bootstrap4-toggle@5.1.1/js/bootstrap4-toggle.jquery.min.js';
 
     /**
      * Twitter Bootstrap switch

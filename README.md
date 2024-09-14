@@ -1,19 +1,19 @@
 ![EasePHP TWB5 Widgets Logo](project-logo.png?raw=true "Project Logo")
 
-EasePHP Twitter bootstrap5 Widgets
+EasePHP Twitter bootstrap4 Widgets
 ==================================
 
 Object oriented PHP Framework for easy&fast writing small/middle sized apps.
 
-[![Latest Stable Version](https://poser.pugx.org/vitexsoftware/ease-twbootstrap5-widgets/v)](//packagist.org/packages/vitexsoftware/ease-twbootstrap5-widgets) 
-[![Total Downloads](https://poser.pugx.org/vitexsoftware/ease-twbootstrap5-widgets/downloads)](//packagist.org/packages/vitexsoftware/ease-twbootstrap5-widgets) 
-[![Latest Unstable Version](https://poser.pugx.org/vitexsoftware/ease-twbootstrap5-widgets/v/unstable)](//packagist.org/packages/vitexsoftware/ease-twbootstrap5-widgets) 
-[![License](https://poser.pugx.org/vitexsoftware/ease-twbootstrap5-widgets/license)](//packagist.org/packages/vitexsoftware/ease-twbootstrap5-widgets)
+[![Latest Stable Version](https://poser.pugx.org/vitexsoftware/ease-twbootstrap4-widgets/v)](//packagist.org/packages/vitexsoftware/ease-twbootstrap4-widgets) 
+[![Total Downloads](https://poser.pugx.org/vitexsoftware/ease-twbootstrap4-widgets/downloads)](//packagist.org/packages/vitexsoftware/ease-twbootstrap4-widgets) 
+[![Latest Unstable Version](https://poser.pugx.org/vitexsoftware/ease-twbootstrap4-widgets/v/unstable)](//packagist.org/packages/vitexsoftware/ease-twbootstrap4-widgets) 
+[![License](https://poser.pugx.org/vitexsoftware/ease-twbootstrap4-widgets/license)](//packagist.org/packages/vitexsoftware/ease-twbootstrap4-widgets)
 
-[![Monthly Downloads](https://poser.pugx.org/vitexsoftware/ease-twbootstrap5-widgets/d/monthly)](//packagist.org/packages/vitexsoftware/ease-twbootstrap5-widgets)
-[![Dependents](https://poser.pugx.org/vitexsoftware/ease-twbootstrap5-widgets/dependents)](//packagist.org/packages/vitexsoftware/ease-twbootstrap5-widgets)
-[![Daily Downloads](https://poser.pugx.org/vitexsoftware/ease-twbootstrap5-widgets/d/daily)](//packagist.org/packages/vitexsoftware/ease-twbootstrap5-widgets)
-[![Total Downloads](https://poser.pugx.org/vitexsoftware/ease-twbootstrap5-widgets/downloads)](//packagist.org/packages/vitexsoftware/ease-twbootstrap5-widgets)
+[![Monthly Downloads](https://poser.pugx.org/vitexsoftware/ease-twbootstrap4-widgets/d/monthly)](//packagist.org/packages/vitexsoftware/ease-twbootstrap4-widgets)
+[![Dependents](https://poser.pugx.org/vitexsoftware/ease-twbootstrap4-widgets/dependents)](//packagist.org/packages/vitexsoftware/ease-twbootstrap4-widgets)
+[![Daily Downloads](https://poser.pugx.org/vitexsoftware/ease-twbootstrap4-widgets/d/daily)](//packagist.org/packages/vitexsoftware/ease-twbootstrap4-widgets)
+[![Total Downloads](https://poser.pugx.org/vitexsoftware/ease-twbootstrap4-widgets/downloads)](//packagist.org/packages/vitexsoftware/ease-twbootstrap4-widgets)
 
 ---
 
@@ -23,10 +23,10 @@ Bricks Included
 
 
 
-Bootstrap5 Toggle
+bootstrap4 Toggle
 -----------------------
 
-Ease support for https://github.com/palcarazm/bootstrap5-toggle
+Ease support for https://github.com/palcarazm/bootstrap4-toggle
 
 ![Toggle](Toggle.png?raw=true)
 
@@ -42,7 +42,7 @@ Composer:
 ---------
 
 ```shell
-composer require vitexsoftware/ease-bootstrap5-widgets
+composer require vitexsoftware/ease-bootstrap4-widgets
 ```
 
 
@@ -53,7 +53,7 @@ For Debian, Ubuntu & friends please use repo:
 
 ```shell
 
-sudo apt install php-vitexsoftware-ease-bootstrap5-widgets
+sudo apt install php-vitexsoftware-ease-bootstrap4-widgets
 ```
 
 In this case please add this to your app composer.json:
@@ -90,6 +90,6 @@ Links
 
 Homepage: https://www.vitexsoftware.cz/ease.php
 
-GitHub: https://github.com/VitexSoftware/php-ease-bootstrap5-widgets
+GitHub: https://github.com/VitexSoftware/php-ease-bootstrap4-widgets
 
-PhpDocumentor: https://www.vitexsoftware.cz/php-ease-bootstrap5-widgets/
+PhpDocumentor: https://www.vitexsoftware.cz/php-ease-bootstrap4-widgets/

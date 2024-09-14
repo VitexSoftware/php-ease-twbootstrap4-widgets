@@ -1,7 +1,7 @@
 <?php
 
 /**
- * EasePHPbricks - Bootstrap5 Switch example
+ * EasePHPbricks - bootstrap4 Switch example
  *
  * 
  * @author     Vítězslav Dvořák <vitex@arachne.cz>

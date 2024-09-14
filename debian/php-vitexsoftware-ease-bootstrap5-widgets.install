@@ -1,4 +1,0 @@
-src/Ease/TWB5/Widgets/*.php     /usr/share/php/EaseTWB5Widgets
-debian/composer.json            /usr/share/php/EaseTWB5Widgets
-tmp/node_modules/bootstrap5-toggle/css/* /usr/share/javascript/bootstrap5/css/
-tmp/node_modules/bootstrap5-toggle/js/*  /usr/share/javascript/bootstrap5/js/
