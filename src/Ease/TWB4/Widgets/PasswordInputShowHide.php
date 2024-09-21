@@ -1,11 +1,16 @@
 <?php
 
+declare(strict_types=1);
+
 /**
- * EasePHP Twitter Bootstrap4  - Password Input with Eye
+ * This file is part of the Ease TWBootstrap4 Widgets package
  *
- * @link       https://codepen.io/Qanser/pen/dVRGJv
- * @author     Vítězslav Dvořák <vitex@arachne.cz>
- * @copyright  2020 Vitex Software
+ * https://github.com/VitexSoftware/php-ease-twbootstrap4-widgets
+ *
+ * (c) Vítězslav Dvořák <http://vitexsoftware.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
 
 namespace Ease\TWB4\Widgets;
@@ -20,13 +25,12 @@ use Ease\TWB4\Part;
 class PasswordInputShowHide extends DivTag
 {
     /**
-     *
      * @var unique widget identifier
      */
-    public $key = null;
+    public unique $key = null;
 
     /**
-     * Password Input with Eye
+     * Password Input with Eye.
      *
      * @param string $inputName
      * @param string $label
@@ -42,24 +46,44 @@ class PasswordInputShowHide extends DivTag
     }
 
     /**
-     * Include requied assets in page
+     * Include requied assets in page.
      */
-    public function finalize()
+    public function finalize(): void
     {
         Part::twBootstrapize();
-        $this->addJavascript('
-$("#' . $this->key . ' a").on("click", function (event) {
+        $this->addJavascript(<<<'EOD'
+
+$("#
+EOD.$this->key.<<<'EOD'
+ a").on("click", function (event) {
     event.preventDefault();
-    if ($("#' . $this->key . ' input").attr("type") == "text") {
-      $("#' . $this->key . ' input").attr("type", "password");
-      $("#' . $this->key . ' i").addClass("fa-eye-slash");
-      $("#' . $this->key . ' i").removeClass("fa-eye");
-    } else if ($("#' . $this->key . ' input").attr("type") == "password") {
-      $("#' . $this->key . ' input").attr("type", "text");
-      $("#' . $this->key . ' i").removeClass("fa-eye-slash");
-      $("#' . $this->key . ' i").addClass("fa-eye");
+    if ($("#
+EOD.$this->key.<<<'EOD'
+ input").attr("type") == "text") {
+      $("#
+EOD.$this->key.<<<'EOD'
+ input").attr("type", "password");
+      $("#
+EOD.$this->key.<<<'EOD'
+ i").addClass("fa-eye-slash");
+      $("#
+EOD.$this->key.<<<'EOD'
+ i").removeClass("fa-eye");
+    } else if ($("#
+EOD.$this->key.<<<'EOD'
+ input").attr("type") == "password") {
+      $("#
+EOD.$this->key.<<<'EOD'
+ input").attr("type", "text");
+      $("#
+EOD.$this->key.<<<'EOD'
+ i").removeClass("fa-eye-slash");
+      $("#
+EOD.$this->key.<<<'EOD'
+ i").addClass("fa-eye");
     }
-  });            
-            ');
+  });
+
+EOD);
     }
 }

@@ -1,34 +1,42 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+declare(strict_types=1);
+
+/**
+ * This file is part of the Ease TWBootstrap4 Widgets package
+ *
+ * https://github.com/VitexSoftware/php-ease-twbootstrap4-widgets
+ *
+ * (c) Vítězslav Dvořák <http://vitexsoftware.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
 
 namespace Ease\TWB4\Widgets;
 
 /**
- * LoginForm widget
+ * LoginForm widget.
  *
  * @author vitex
  */
 class LoginForm extends \Ease\TWB4\Form
 {
-    public $loginInput = null;
-    public $passwordInput = null;
+    public $loginInput;
+    public $passwordInput;
     public $loginInputName = 'login';
     public $passwordInputName = 'password';
     public $formMethod = 'POST';
-    public $formAction = null;
+    public $formAction;
 
     /**
-     * Login Form
+     * Login Form.
+     *
      * @param string $username
      * @param string $password
-     * @param array $tagProperties
+     * @param array  $tagProperties
      */
-    public function __construct($username = null, $password = null, $tagProperties = array())
+    public function __construct($username = null, $password = null, $tagProperties = [])
     {
         parent::__construct('Login', $this->formAction, $this->formMethod, $formContents, $tagProperties);
         $this->addInput(new \Ease\Html\InputTextTag($this->loginInputName, $username), _('Username'));
@@ -36,9 +44,9 @@ class LoginForm extends \Ease\TWB4\Form
     }
 
     /**
-     * Finally add submit button
+     * Finally add submit button.
      */
-    public function finalize()
+    public function finalize(): void
     {
         \Ease\TWB4\Part::twBootstrapize();
         $this->addItem(new \Ease\Html\SubmitButton(_('Submit')));

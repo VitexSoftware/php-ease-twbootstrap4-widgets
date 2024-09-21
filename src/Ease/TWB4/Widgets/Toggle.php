@@ -1,11 +1,16 @@
 <?php
 
+declare(strict_types=1);
+
 /**
- * EasePHP Twitter Bootstrap  - Toggle
+ * This file is part of the Ease TWBootstrap4 Widgets package
  *
- * @link       https://gitbrent.github.io/bootstrap4-toggle
- * @author     Vítězslav Dvořák <vitex@arachne.cz>
- * @copyright  2019-2024 Vitex Software
+ * https://github.com/VitexSoftware/php-ease-twbootstrap4-widgets
+ *
+ * (c) Vítězslav Dvořák <http://vitexsoftware.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
 
 namespace Ease\TWB4\Widgets;
@@ -13,25 +18,22 @@ namespace Ease\TWB4\Widgets;
 class Toggle extends \Ease\Html\CheckboxTag
 {
     /**
-     * Properties holder
-     * @var array
+     * Properties holder.
      */
-    public $properties = [];
+    public array $properties = [];
 
     /**
-     * Stylesheet location
-     * @var string
+     * Stylesheet location.
      */
-    public $css = 'https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css';
+    public string $css = 'https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css';
 
     /**
-     * Javascript location
-     * @var string
+     * Javascript location.
      */
-    public $js = 'https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js';
+    public string $js = 'https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js';
 
     /**
-     * Twitter Bootstrap switch
+     * Twitter Bootstrap switch.
      *
      * @param string $name       tag name
      * @param bool   $checked    checkbox state
@@ -51,6 +53,7 @@ class Toggle extends \Ease\Html\CheckboxTag
         if (!isset($properties['data-on'])) {
             $properties['data-on'] = _('Yes');
         }
+
         if (!isset($properties['data-off'])) {
             $properties['data-off'] = _('No');
         }
@@ -59,19 +62,19 @@ class Toggle extends \Ease\Html\CheckboxTag
     }
 
     /**
-     * Properties setter
+     * Properties setter.
      *
      * @param array $properties values to change
      */
-    public function setProperties($properties)
+    public function setProperties($properties): void
     {
         $this->properties = array_merge($this->properties, $properties);
     }
 
     /**
-     * Include requied assets in page
+     * Include requied assets in page.
      */
-    public function finalize()
+    public function finalize(): void
     {
         \Ease\TWB4\Part::twBootstrapize();
         $this->includeCss($this->css);

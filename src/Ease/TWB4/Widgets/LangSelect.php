@@ -1,17 +1,22 @@
 <?php
 
+declare(strict_types=1);
+
 /**
- * EasePHP Twitter Bootstrap4  - Availble Languages Select
+ * This file is part of the Ease TWBootstrap4 Widgets package
  *
- * @link       https://fontawesome.com/
- * @author     Vítězslav Dvořák <vitex@arachne.cz>
- * @copyright  2020 Vitex Software
+ * https://github.com/VitexSoftware/php-ease-twbootstrap4-widgets
+ *
+ * (c) Vítězslav Dvořák <http://vitexsoftware.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
 
 namespace Ease\TWB4\Widgets;
 
 /**
- * Description of LangSelect
+ * Description of LangSelect.
  *
  * @author vitex
  */

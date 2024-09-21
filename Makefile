@@ -1,28 +1,27 @@
-repoversion=$(shell LANG=C aptitude show php-ease-bootstrap4-widgets | grep Version: | awk '{print $$2}')
-nextversion=$(shell echo $(repoversion) | perl -ne 'chomp; print join(".", splice(@{[split/\./,$$_]}, 0, -1), map {++$$_} pop @{[split/\./,$$_]}), "\n";')
+# vim: set tabstop=8 softtabstop=8 noexpandtab:
+.PHONY: help
+help: ## Displays this list of targets with descriptions
+	@grep -E '^[a-zA-Z0-9_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[32m%-30s\033[0m %s\n", $$1, $$2}'
 
+.PHONY: static-code-analysis
+static-code-analysis: vendor ## Runs a static code analysis with phpstan/phpstan
+	vendor/bin/phpstan analyse --configuration=phpstan-default.neon.dist --memory-limit=-1
 
-clean:
-	rm -rf debian/php-ease-bootstrap4-widgets
-	rm -rf debian/php-ease-bootstrap4-widgets-doc
-	rm -rf debian/*.log
-	rm -rf docs/*
-	rm -rf vendor/* composer.lock
+.PHONY: static-code-analysis-baseline
+static-code-analysis-baseline: check-symfony vendor ## Generates a baseline for static code analysis with phpstan/phpstan
+	vendor/bin/phpstan analyze --configuration=phpstan-default.neon.dist --generate-baseline=phpstan-default-baseline.neon --memory-limit=-1
 
-doc:
-	debian/apigendoc.sh
+.PHONY: tests
+tests: vendor
+	vendor/bin/phpunit tests
 
-test:
-	composer update
-	phpunit --bootstrap tests/Bootstrap.php --configuration tests/configuration.xml tests
-	codecept run
+.PHONY: vendor
+vendor: composer.json composer.lock ## Installs composer dependencies
+	composer install
 
-release:
-	echo Release v$(nextversion)
-	dch -v $(nextversion) `git log -1 --pretty=%B | head -n 1`
-	debuild -i -us -uc -b
-	git commit -a -m "Release v$(nextversion)"
-	git tag -a $(nextversion) -m "version $(nextversion)"
+.PHONY: cs
+cs: ## Update Coding Standards
+	vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php --diff --verbose
 
 
 deb:

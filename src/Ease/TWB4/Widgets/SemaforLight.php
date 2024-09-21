@@ -1,16 +1,29 @@
 <?php
 
+declare(strict_types=1);
+
+/**
+ * This file is part of the Ease TWBootstrap4 Widgets package
+ *
+ * https://github.com/VitexSoftware/php-ease-twbootstrap4-widgets
+ *
+ * (c) Vítězslav Dvořák <http://vitexsoftware.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Ease\TWB4\Widgets;
 
 /**
- * Show light or dark circle in given color
+ * Show light or dark circle in given color.
  *
  * @author vitex
  */
 class SemaforLight extends \Ease\Html\SvgTag
 {
     public $properties = [
-        'xmlns' => "http://www.w3.org/2000/svg"
+        'xmlns' => 'http://www.w3.org/2000/svg',
     ];
 
     public function __construct($color = 'white', $properties = [])
@@ -18,26 +31,34 @@ class SemaforLight extends \Ease\Html\SvgTag
         if ($color === false) {
             $color = 'danger';
         }
+
         if ($color === true) {
             $color = 'success';
         }
+
         $properties = array_merge($this->properties, $properties);
-        parent::__construct('   
+        parent::__construct(<<<'EOD'
+
     <g>
     <ellipse
        ry="8"
        rx="8"
        cy="9"
        cx="9"
-       stroke="' . self::adjustBrightness(self::colorNameToHex($color), 200) . '" 
-       style="fill:' . self::colorNameToHex($color) . ';fill-opacity:1;stroke-width:1" />
+       stroke="
+EOD.self::adjustBrightness(self::colorNameToHex($color), 200).<<<'EOD'
+"
+       style="fill:
+EOD.self::colorNameToHex($color).<<<'EOD'
+;fill-opacity:1;stroke-width:1" />
   </g>
-', $properties);
+
+EOD, $properties);
     }
-//;
+    // ;
     /**
      * converts an html color name to a hex color value
-     * if the input is not a color name, the original value is returned
+     * if the input is not a color name, the original value is returned.
      *
      * @param string $color_name
      *
@@ -46,7 +67,7 @@ class SemaforLight extends \Ease\Html\SvgTag
     public static function colorNameToHex($color_name)
     {
         // standard 147 HTML color names
-        $colors = array(
+        $colors = [
             'muted' => '636c72',
             'primary' => '0275d8',
             'success' => '5cb85c',
@@ -199,21 +220,21 @@ class SemaforLight extends \Ease\Html\SvgTag
             'white' => 'FFFFFF',
             'whitesmoke' => 'F5F5F5',
             'yellow' => 'FFFF00',
-            'yellowgreen' => '9ACD32');
+            'yellowgreen' => '9ACD32'];
 
         $color_name = strtolower($color_name);
+
         if (isset($colors[$color_name])) {
-            return '#' . $colors[$color_name];
-        } else {
-            return ($color_name);
+            return '#'.$colors[$color_name];
         }
+
+        return $color_name;
     }
 
     /**
-     * Obtain lighter or darker color code
+     * Obtain lighter or darker color code.
      *
      * @param string $color name e.g. blue
-     * @param boolean $state
      *
      * @return type
      */
@@ -223,10 +244,10 @@ class SemaforLight extends \Ease\Html\SvgTag
     }
 
     /**
-     * Change color hue
+     * Change color hue.
      *
-     * @param string $hex initial color
-     * @param int $steps
+     * @param string $hex   initial color
+     * @param int    $steps
      *
      * @return string changed color
      */
@@ -237,22 +258,23 @@ class SemaforLight extends \Ease\Html\SvgTag
 
         // Normalize into a six character long hex string
         $hex = str_replace('#', '', $hex);
-        if (strlen($hex) == 3) {
-            $hex = str_repeat(substr($hex, 0, 1), 2) . str_repeat(substr(
+
+        if (\strlen($hex) === 3) {
+            $hex = str_repeat(substr($hex, 0, 1), 2).str_repeat(substr(
                 $hex,
                 1,
-                1
-            ), 2) . str_repeat(substr($hex, 2, 1), 2);
+                1,
+            ), 2).str_repeat(substr($hex, 2, 1), 2);
         }
 
         // Split into three parts: R, G and B
         $color_parts = str_split($hex, 2);
-        $return      = '#';
+        $return = '#';
 
         foreach ($color_parts as $color) {
-            $color  = hexdec($color); // Convert to decimal
-            $color  = max(0, min(255, $color + $steps)); // Adjust color
-            $return .= str_pad(dechex($color), 2, '0', STR_PAD_LEFT); // Make two char hex code
+            $color = hexdec($color); // Convert to decimal
+            $color = max(0, min(255, $color + $steps)); // Adjust color
+            $return .= str_pad(dechex($color), 2, '0', \STR_PAD_LEFT); // Make two char hex code
         }
 
         return $return;
