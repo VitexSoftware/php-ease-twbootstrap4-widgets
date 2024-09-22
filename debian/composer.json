@@ -1,7 +1,7 @@
 {
   "name": "deb/ease-bootstrap4-widgets",
   "description": "Twitter Bootstrap4 Widgets for PHP Framework (debianized)",
-  "version": "1.3",
+  "version": "1.4.0",
   "authors": [
     {
       "name": "Vítězslav Dvořák",

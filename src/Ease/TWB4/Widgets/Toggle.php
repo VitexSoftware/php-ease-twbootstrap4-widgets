@@ -23,12 +23,12 @@ class Toggle extends \Ease\Html\CheckboxTag
     public array $properties = [];
 
     /**
-     * Stylesheet location.
+     * StyleSheet location.
      */
     public string $css = 'https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css';
 
     /**
-     * Javascript location.
+     * JavaScript location.
      */
     public string $js = 'https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js';
 
