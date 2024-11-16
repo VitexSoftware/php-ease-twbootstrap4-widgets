@@ -19,6 +19,8 @@ class Toggle extends \Ease\Html\CheckboxTag
 {
     /**
      * Properties holder.
+     *
+     * @var array<string, string>
      */
     public array $properties = [];
 
@@ -35,10 +37,10 @@ class Toggle extends \Ease\Html\CheckboxTag
     /**
      * Twitter Bootstrap switch.
      *
-     * @param string $name       tag name
-     * @param bool   $checked    checkbox state
-     * @param string $value      returned value
-     * @param array  $properties tag parameters
+     * @param string                $name       tag name
+     * @param bool                  $checked    checkbox state
+     * @param string                $value      returned value
+     * @param array<string, string> $properties tag parameters
      */
     public function __construct(
         $name,
@@ -64,7 +66,7 @@ class Toggle extends \Ease\Html\CheckboxTag
     /**
      * Properties setter.
      *
-     * @param array $properties values to change
+     * @param array<string, string> $properties values to change
      */
     public function setProperties($properties): void
     {

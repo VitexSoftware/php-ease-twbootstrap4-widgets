@@ -27,8 +27,8 @@ class FaIcon extends PairTag
     /**
      * Font Awesome Icon tag.
      *
-     * @param string $icon          Font Awesome Icon class name (maybe without fa- prefix)
-     * @param array  $tagProperties eg. ['aria-hidden'=>false]
+     * @param string                $icon          Font Awesome Icon class name (maybe without fa- prefix)
+     * @param array<string, string> $tagProperties eg. ['aria-hidden'=>false]
      */
     public function __construct($icon, $tagProperties = null)
     {

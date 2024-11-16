@@ -28,7 +28,6 @@ class MainPageMenu extends \Ease\TWB4\Row
     public function __construct()
     {
         parent::__construct(
-            null,
             [],
             [
                 'class' => 'container',
@@ -40,16 +39,16 @@ class MainPageMenu extends \Ease\TWB4\Row
     /**
      * Add Item to mainpage Menu.
      *
-     * @param string     $title       caption
-     * @param string     $url         image link href url
-     * @param string     $image       url
-     * @param mixed      $description
-     * @param null|mixed $buttonText
-     * @param array      $properties  for Card
+     * @param string                $title       caption
+     * @param string                $url         image link href url
+     * @param string                $image       url
+     * @param mixed                 $description
+     * @param null|mixed            $buttonText
+     * @param array<string, string> $properties  for Card
      *
      * @return \Ease\Html\ATag
      */
-    public function addMenuItem($title, $url, $image, $description, $buttonText = null, $properties = [])
+    public function addMenuItem($title, $url, $image, $description, $buttonText = null, array $properties = [])
     {
         $icon = new \Ease\Html\ImgTag($image, $title, ['alt' => $title, 'class' => 'card-img-top']);
         // $cardHeader = new \Ease\Html\DivTag($title, ['class' => 'card-header']);

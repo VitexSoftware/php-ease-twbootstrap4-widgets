@@ -25,9 +25,9 @@ use Ease\TWB4\Part;
 class PasswordInputShowHide extends DivTag
 {
     /**
-     * @var unique widget identifier
+     * @var string unique widget identifier
      */
-    public unique $key = null;
+    public string $key = '';
 
     /**
      * Password Input with Eye.
