@@ -27,3 +27,4 @@ debian/.debhelper/
 /debian/php-ease-bootstrap4-widgets/
 debian/php-vitexsoftware-ease-bootstrap4-widgets
 
+/.build/

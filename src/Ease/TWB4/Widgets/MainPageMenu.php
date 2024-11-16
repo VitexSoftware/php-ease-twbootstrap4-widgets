@@ -52,7 +52,7 @@ class MainPageMenu extends \Ease\TWB4\Row
     public function addMenuItem($title, $url, $image, $description, $buttonText = null, $properties = [])
     {
         $icon = new \Ease\Html\ImgTag($image, $title, ['alt' => $title, 'class' => 'card-img-top']);
-        //$cardHeader = new \Ease\Html\DivTag($title, ['class' => 'card-header']);
+        // $cardHeader = new \Ease\Html\DivTag($title, ['class' => 'card-header']);
         $cardBody = new \Ease\Html\DivTag(new \Ease\Html\H5Tag($title), ['class' => 'card-body']);
         $cardBody->addItem(new \Ease\Html\PTag($description, ['class' => 'card-text']));
         $cardBody->addItem(new \Ease\TWB4\LinkButton($url, empty($buttonText) ? _('Visit') : $buttonText, 'primary btn-block'));

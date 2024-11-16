@@ -72,7 +72,7 @@ class Toggle extends \Ease\Html\CheckboxTag
     }
 
     /**
-     * Include requied assets in page.
+     * Include required assets in page.
      */
     public function finalize(): void
     {
