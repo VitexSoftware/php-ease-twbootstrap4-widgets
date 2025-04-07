@@ -1,3 +1,22 @@
+php-vitexsoftware-ease-bootstrap4-widgets (1.7.0) UNRELEASED; urgency=medium
+
+  * Selectize trait added
+
+ -- vitex <info@vitexsoftware.cz>  Mon, 07 Apr 2025 17:24:20 +0200
+
+php-vitexsoftware-ease-bootstrap4-widgets (1.6.0) unstable; urgency=medium
+
+  * Updated various dependencies and scripts.
+  * Improved compatibility with new GitHub features.
+  * Enhanced UI components with new styles and scripts.
+  * Fixed issues with radio button styles and interactions.
+  * Added new icons and templates for various UI elements.
+  * Improved accessibility features and compliance with a11y standards.
+  * Updated documentation links and tooltips for better user guidance.
+  * Removed deprecated features and scripts for better performance.
+
+ -- vitex <info@vitexsoftware.cz>  Mon, 07 Apr 2025 17:24:07 +0200
+
 php-vitexsoftware-ease-bootstrap4-widgets (1.5.0) UNRELEASED; urgency=medium
 
   * Semantic Versioning ready
