@@ -1,7 +1,7 @@
 {
-  "name": "deb/ease-bootstrap4-widgets",
-  "description": "Twitter Bootstrap4 Widgets for PHP Framework (debianized)",
-  "version": "1.6.0",
+  "name": "vitexsoftware/datatables-abraflexi",
+  "description": "Show AbarFlexi evidence data as DataTable",
+  "version": "1.7.0",
   "authors": [
     {
       "name": "Vítězslav Dvořák",
@@ -29,7 +29,15 @@
     },
     {
       "type": "path",
-      "url": "/usr/share/php/EaseTWB4"
+      "url": "/usr/share/php/EaseTWB5"
+    },
+    {
+      "type": "path",
+      "url": "/usr/share/php/EaseTWB5Widgets"
+    },
+    {
+      "type": "path",
+      "url": "/usr/share/php/EaseTWB5WidgetsAbraFlexi/"
     }
   ],
   "type": "library",
