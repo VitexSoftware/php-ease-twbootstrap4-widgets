@@ -1,6 +1,9 @@
 php-vitexsoftware-ease-bootstrap4-widgets (1.7.0) UNRELEASED; urgency=medium
 
   * Selectize trait added
+  * Added LangSelect widget - Bootstrap 4 dropdown-based language selector
+  * Added LangLinks widget - Bootstrap 4 navigation-style language selector
+  * Updated examples to demonstrate language selector widgets
 
  -- vitex <info@vitexsoftware.cz>  Mon, 07 Apr 2025 17:24:20 +0200
 

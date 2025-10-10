@@ -20,7 +20,13 @@ Object oriented PHP Framework for easy&fast writing small/middle sized apps.
 Bricks Included
 ===============
 
-
+* MainPageMenu - Large icon navigation menu
+* Toggle - Bootstrap switch/toggle component
+* PasswordInputShowHide - Password input with visibility toggle
+* FaIcon - Font Awesome icon wrapper
+* BrowsingHistory - User browsing history component
+* LangSelect - Language selector dropdown
+* LangLinks - Language selector navigation links
 
 MainPageMenu
 ------------
@@ -63,6 +69,55 @@ Browsing History
 new BrowsingHistory();
 ``` 
 ![Browsing History](BrowsingHistory.png?raw=true "Browsing History")
+
+Language Selector Dropdown (LangSelect)
+---------------------------------------
+
+Bootstrap 4 dropdown-based language selector that integrates with `Ease\Locale` for internationalization.
+
+```php
+// Basic usage
+$langSelector = new \Ease\TWB4\Widgets\LangSelect();
+
+// With custom URL parameter name (default is 'locale')
+$langSelector = new \Ease\TWB4\Widgets\LangSelect('lang');
+
+// With additional properties
+$langSelector = new \Ease\TWB4\Widgets\LangSelect('locale', ['class' => 'dropdown my-custom-class']);
+```
+
+Features:
+- Automatically detects available languages from `Ease\Locale`
+- Shows current language with a globe icon
+- Preserves existing URL parameters when switching languages
+- Fully styled with Bootstrap 4 dropdown component
+- Active language is highlighted in the dropdown menu
+
+Language Navigation Links (LangLinks)
+--------------------------------------
+
+Bootstrap 4 navigation-style language selector that displays languages as pills or tabs.
+
+```php
+// Basic usage (nav pills style)
+$langLinks = new \Ease\TWB4\Widgets\LangLinks();
+
+// As navigation tabs
+$langLinks = new \Ease\TWB4\Widgets\LangLinks(['class' => 'nav nav-tabs']);
+
+// Inline style
+$langLinks = new \Ease\TWB4\Widgets\LangLinks(['class' => 'nav nav-pills d-inline-flex']);
+
+// Vertical layout
+$langLinks = new \Ease\TWB4\Widgets\LangLinks(['class' => 'nav flex-column']);
+```
+
+Features:
+- Displays all available languages as navigation links
+- Supports different Bootstrap 4 nav styles (pills, tabs, etc.)
+- Current language is marked as active
+- Can be used inline or as block element
+- Preserves URL parameters when switching languages
 
 
 
