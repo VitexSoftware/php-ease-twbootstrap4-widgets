@@ -29,3 +29,4 @@ debian/php-vitexsoftware-ease-bootstrap4-widgets
 
 /.build/
 /debian/tmp/
+.phpunit.result.cache

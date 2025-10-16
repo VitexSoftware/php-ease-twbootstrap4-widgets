@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+if (!isset($_SERVER['REQUEST_URI'])) {
+    $_SERVER['REQUEST_URI'] = '/test';
+}
+
 /**
  * This file is part of the Ease TWBootstrap4 Widgets package
  *
@@ -30,5 +34,5 @@ require __DIR__.'/../vendor/autoload.php';
 \define('DB_PORT', 5432);
 \define('DB_TYPE', 'pgsql');
 
+\Ease\Locale::singleton(null, realpath(__DIR__ . '/../i18n'), 'ease-twbootstrap4-widgets');
 \Ease\Shared::user(new Ease\Anonym());
-\Ease\Shared::webPage(new Ease\TWB\WebPage());

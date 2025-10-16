@@ -95,7 +95,7 @@ class LangSelect extends \Ease\Html\DivTag
 
             $dropdownMenu->addItem(new \Ease\Html\ATag(
                 $url,
-                $langName,
+                _($langName),
                 ['class' => $linkClass],
             ));
         }
