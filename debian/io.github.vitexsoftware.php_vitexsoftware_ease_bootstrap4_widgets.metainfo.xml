@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.vitexsoftware.php_vitexsoftware_ease_bootstrap4_widgets</id>
+  <metadata_license>MIT</metadata_license>
+  <project_license>MIT</project_license>
+  <name>php-vitexsoftware-ease-bootstrap4-widgets</name>
+  <summary>Simple PHP framework TWB4 Widgets</summary>
+  <description>
+    <p>
+      Twitter Bootstrap4 Widgets for EasePHP Framework
+    </p>
+  </description>
+  <categories>
+    <category>Utility</category>
+  </categories>
+  <url type="homepage">http://v.s.cz/ease.php</url>
+  <developer id="cz.vitexsoftware">
+    <name>VitexSoftware</name>
+  </developer>
+  <content_rating type="oars-1.1"/>
+</component>
