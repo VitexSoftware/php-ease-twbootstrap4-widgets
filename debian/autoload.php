@@ -1,13 +1,15 @@
 <?php
-// autoload.php for EaseTWB4Witgets
+// autoload.php for EaseTWB4Widgets
 
-// Register the autoloader for the EaseTWB4 library
+require_once '/usr/share/php/EaseHtml/autoload.php';
+
+// Register the autoloader for the EaseTWB4Witdgets library
 spl_autoload_register(function ($class) {
-    // Only autoload classes from the Ease namespace
-    if (strpos($class, 'Ease\\') === 0) {
-        // Adjust baseDir for deployed location
-        $baseDir = '/usr/share/php/EaseTWB4Widgets/Ease/';
-        $relativeClass = substr($class, strlen('Ease\\'));
+    // Only autoload classes from the Ease\\TWB4\\Widgets namespace
+    $prefix = 'Ease\\TWB4\\Widgets\\';
+    if (strpos($class, $prefix) === 0) {
+        $baseDir = __DIR__ . '/';
+        $relativeClass = substr($class, strlen($prefix));
         $file = $baseDir . str_replace('\\', '/', $relativeClass) . '.php';
         if (file_exists($file)) {
             require $file;
