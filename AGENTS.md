@@ -1,4 +1,4 @@
-# WARP.md - Working AI Reference for php-ease-twbootstrap4-widgets
+# AGENTS.md - Working AI Reference for php-ease-twbootstrap4-widgets
 
 ## Project Overview
 **Type**: PHP Project/Debian Package
